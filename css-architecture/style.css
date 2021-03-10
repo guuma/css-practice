@@ -1,0 +1,145 @@
+/* ベース */
+  body {
+    font-family: sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* レイアウト */
+  .ly_cont {
+    /* 左右中央揃えのための指定 */
+    /* レイアウトに関するスタイルなので別クラスで切り出す */
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .bl_media > span {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .bl_media {
+    /* モジュールに対する指定 */
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .bl_media--rev {
+    flex-direction: column-reverse;
+    text-align: right;
+  }
+
+  .bl_media_imageWrapper {
+    flex: 1 1 25%;
+    margin-right: 3.33333%;
+  }
+
+  .bl_media_imageWrapper__boreded {
+    padding: 2px;
+    border: 1px solid #aaa;
+  }
+
+  .bl_media--rev .bl_media_imageWrapper {
+    margin-right: 0;
+  }
+
+  .bl_media--rev .bl_media_body {
+    margin-right: 3.33333%;
+  }
+
+  .bl_media_imageWrapper img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .bl_media_body {
+    flex: 1 1 68.33333%;
+  }
+
+  .bl_media_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .subTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #555;
+  }
+
+  #header .logo,
+  #footer .logo {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+  }
+
+
+  #header {
+    width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+  }
+
+  #main {
+    width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+  }
+
+  #footer {
+    width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+  }
+
+  .l-narrow #header {
+    width: 960px;
+  }
+
+  .l-narrow #main {
+    width: 960px;
+  }
+
+  .l-narrow #footer {
+    width: 960px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 300px;
+    padding: 20px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.25s;
+    border-width: 0;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.16);
+    color: #fff;
+    background-color: #DD742C;
+  }
+
+  .l-header .btn {
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .l-header .btn:nth-of-type(2) {
+    width: 160px;
+  }
