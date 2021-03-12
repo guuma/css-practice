@@ -143,3 +143,54 @@
   .l-header .btn:nth-of-type(2) {
     width: 160px;
   }
+
+  .is-tabnav-active {
+    background-color: #0093ff;
+  }
+
+  .is-tabnav-active > a {
+    pointer-events: none;
+    color: #fff;
+  }
+
+  .is-inputtext-error {
+    border-color: #D40152;
+  }
+
+  .is-inputtext-error::placeholder {
+    color: #D40152;
+  }
+
+
+  /* theme/sea.css */
+  .theme-background {
+    background-color: aqua;
+  }
+
+  .theme-border {
+    border: 1px solid blue;
+  }
+
+  .button--size-s {
+    width: 160px;
+  }
+
+  .button--size-m {
+    width: 200px;
+  }
+
+  /*bg-color-red から theme-cautionへ */
+  .button--theme-caution {
+    background-color: red;
+    color: #fff;
+  }
+
+  /* ☓ 子(孫)セレクターを使用することで詳細度を上げてしまう */
+  .header .logo {
+    margin-right: 30px;
+  }
+
+  /* Mixクラスを使用することで詳細度の高めず、Block自体の再利用性を高めることができる、*/
+  .header__logo {
+    margin-right: 30px;
+  }
